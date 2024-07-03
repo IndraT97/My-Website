@@ -106,7 +106,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: https://www.dropbox.com/scl/fi/lvbmdmq9z87lfjyzu30bj/Indrajeet_Thakare_Resume_DAC.pdf?rlkey=rlzifzk26o56zd1w5v8i0txl0&st=acew8nml&dl=0 
+      url: https//:asa
       download: true
       newPage: false
 #    socialLinks:
