@@ -1,0 +1,3 @@
+[submodule "Website/public"]
+	path = Website/public
+	url = https://github.com/IndraT97/IndraT97.github.io.git
