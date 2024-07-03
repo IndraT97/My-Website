@@ -1,0 +1,403 @@
+baseURL: "https://indrat97.github.io/"
+languageCode: "en-us"
+title: "Indrajeet Thakare"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+
+
+params:
+  title: "Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  #favicon: "/avt.png"
+  favicon: "images/portimg.svg"
+  useBootstrapCDN: false
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "dark" # light
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Profile" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+      disableBlogs: false
+      
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Indrajeet Thakare"
+    subtitle: "Seasoned Data Professional"
+    content: "With a strong background in analytics and hands-on industry experience, I am deeply committed to the field. I am eager to advance my career in this dynamic domain, where I thrive on using advanced analytics to provide valuable insights that improve business operations and drive product development."
+    image: /images/IMG.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: https://www.dropbox.com/scl/fi/lvbmdmq9z87lfjyzu30bj/Indrajeet_Thakare_Resume_DAC.pdf?rlkey=rlzifzk26o56zd1w5v8i0txl0&st=acew8nml&dl=0 
+      download: true
+      newPage: false
+#    socialLinks:
+#      fontAwesomeIcons:
+#        - icon: fab fa-linkedin-in
+#          url: https://example.com
+#        #  <i class="fab fa-linkedin-in"></i>
+#        - icon: fab fa-x-twitter
+#          url: https://example.com
+#      customIcons:
+#        - icon: /fav.png
+#          url: "https://example.com"
+
+  # # About
+  # about:
+  #   enable: true
+  #   title: "About Me"
+  #   image: "/images/aboutImage.png"
+  #   content: |-
+  #     I started my career as a Data Analyst in 2019, and since then, I have worked across various industries including Retail, Healthcare and Manufacturing. My expertise lies in not just analyzing large datasets but also in crafting data governance frameworks that sustain long-term strategic benefits.
+      
+  #     Turning data into direction, I dive deep into data to uncover trends and opportunities that shape business strategies and product development.
+  #   skills:
+  #     enable: true
+  #     title: "Here are a few technologies I've been working with recently:"
+  #     items:
+  #       - "Python"
+  #       - "R Programming"
+  #       - "SQL"
+  #       - "Power BI"
+  #       - "Tableau"
+  #       - "Azure Cloud"
+  #       - "AWS Cloud"
+  #       - "Databricks"
+  #       - "MS Office Suite (Word, Excel, PowerPoint, Visio)"
+
+
+  # # Experience
+  # experience:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - job: "Tesla"
+  #       company: "Data Analyst Intern"
+  #       companyUrl: "https://www.tesla.com/about"
+  #       date: "Aug 2023 - Dec 2023"
+  #       info:
+  #         enable: true
+  #         content: I worked as a Data Analyst in Fall Semester (Co-op).
+  #       content: 
+  #        Worked in the Service Parts Distribution Analytics Team.
+          
+  #         * Facilitated successful JAD sessions, improving project communication and supporting the product lifecycle.
+          
+  #         * Revamped SQL-based data mapping, boosting operational efficiency by 75%.
+          
+  #         * Developed a Tableau performance dashboard, streamlining development processes by 40%.
+          
+  #         * Generated Functional and User Acceptance Test scripts for complex ERP implementation, achieving 98% customer satisfaction.
+        
+  #     - job: "FemiSpace"
+  #       company: "Data Engineer Intern"
+  #       companyUrl: "https://www.femispace.com/"
+  #       date: "May 2023 - Aug 2023"
+  #       info:
+  #         enable: true
+  #         content: I worked as a Data Analytics Engineer in Summer Semester.       
+  #       content: 
+  #        "I worked on a Enhancing Femispace's US Nutritional Food Database through sophisticated data augmentation and analysis, doubling the efficiency of reporting workflows and cutting data processing times, resulting in significant time savings and actionable health insights.
+     
+  #         * Significantly improved system efficiency by 23% by defining configuration specifications and business analysis requirements, leading to improved workflow and performance. 
+          
+  #         * Conducted root cause analysis, delivering optimal solutions and increasing order processing efficiency by 25%. 
+          
+  #         * Contributed to a 20% increase in operational efficiency by designing user stories, use cases, business rules, and technical documentation, ensuring seamless data management."
+
+  #     - job: "Blinkit"
+  #       company: "Data Analyst"
+  #       companyUrl: "https://blinkit.com/aboutus"
+  #       date: "Jan 2023 - May 2024"
+  #       info:
+  #         enable: true
+  #         content: I worked as a Full Time Supply Chain Data Analyst for 2+ years.       
+  #       content: "I worked as a Data Analyst Inventory Planning and Optimization Team
+                  
+  #                 * Significantly improved system efficiency by 23% by defining configuration specifications and business analysis requirements, leading to improved workflow and performance. 
+          
+  #                 * Conducted root cause analysis, delivering optimal solutions and increasing order processing efficiency by 25%. 
+          
+  #                 * Contributed to a 20% increase in operational efficiency by designing user stories, use cases, business rules, and technical documentation, ensuring seamless data management."
+
+  # Education
+  education:
+    enable: true
+    title: "Projects"
+    index: false
+    items:
+      - title: "Data Analysis"
+        content: |-
+         + [Zomato Geospatial Analysis](https://github.com/IndraT97/Zomato_Geospatial_Analysis)
+
+         + [Weather Forecasting Desktop application](https://github.com/IndraT97/Weather-forecasting-desktop-application)
+
+         + [Budget Sales Exploratory Data Analysis](https://github.com/IndraT97/Sales-Exploratory-Data-Analysis)
+
+      - title: "Data Engineering"
+        content: |-
+         ##### Azure Data Engineering
+
+         +  [Azure MetaData Drive Automated Data Pipeline (Full Load)](https://github.com/IndraT97/Azure-Data-Engineering-ADF-DBX-ADLS)
+
+         +  [Azure MetaData Drive Automated Data Pipeline (Incremental Load)](https://github.com/IndraT97/Azure-Data-Engineering-ADF-DBX-RBAC-UC-CI_CD)
+
+         +  [Databricks Automated Data Pipeline using Delta Live Table and Autoloader concept](https://github.com/IndraT97/DBX_Delta_live_Table)
+
+         +  [Databricks Unity Catelog - Hive Meta Store Sync Procedure](https://github.com/IndraT97/Azure-DBX-UnityCatelog_Hive_MetaStore_Sync)
+        
+
+         ##### AWS Data Engineering
+
+         +  [Portfolio Website using AWS Networking Services](https://github.com/IndraT97/AWS_launched-Website-using-Networking-Services)
+        
+      - title: "SQL"
+        content: |-
+         +  [Healthcare Data Analysis](https://github.com/IndraT97/SQL/tree/main/Healthcare%20Data%20Analysis)
+
+         +  [Walmart Data Analysis](https://github.com/IndraT97/SQL/tree/main/Walmart%20Data%20Analysis)
+
+         +  [SQL Leetcode](https://github.com/IndraT97/SQL/tree/main/SQL_Leetcode_Questions)
+
+         +  [SQL HakerRank](https://github.com/IndraT97/SQL/tree/main/HakerRank%20SQL)
+
+      - title: "Data Visualization"
+        content: |-
+         +  [Tech Companies Layoffs](https://mavenanalytics.io/project/2596)
+
+         +  [Ecommerce Inventory Analysis](https://mavenanalytics.io/project/3404)
+
+         +  [Data Professional Survey Breakdown](https://mavenanalytics.io/project/2761)
+
+         +  [Instacart Sales Analysis](https://mavenanalytics.io/project/2626)
+        
+         +  [Business Location Analysis by ArcGIS](https://mavenanalytics.io/project/2628)
+        
+      - title: "Web Scraping"
+        content: |-
+         +  [Amazon Best Selling Book Web Scraping](https://github.com/IndraT97/Web_Scraping/tree/main/Amazon%20Best%20Selling%20book%20Web%20Scraping)
+
+         +  [Flipkart Web Scrapping](https://github.com/IndraT97/Web_Scraping/tree/main/Flipkart%20web%20scrapping)
+
+         +  [Github Web Scraping](https://github.com/IndraT97/Web_Scraping/tree/main/Github%20Web%20Scraping)      
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: AWS Certified Solutions Architect – Associate
+        content: Issued on March 2024  
+        url: "https://www.credly.com/badges/a446b9c4-7883-4508-8f8a-20d9c69b3313/linked_in_profile"
+        image: /images/AWS.png
+
+      - title: Alteryx Foundation Micro-Credential
+        content: Gained the expertise in transforming data using Alteryx.
+        url: "https://www.credly.com/badges/5e4f2a57-4604-4df0-be67-a61e0c7e2bda/linked_in_profile"
+        image: /images/alteryx_new.png
+
+      - title: DataBricks Genrative AI Fundamentals
+        content: Issued on Feb 2024
+        url: "https://credentials.databricks.com/6ea4cb16-f1a1-4f71-8797-8d5363cf07a8"
+        image: /images/DBX.png
+
+      - title: Azure Fundamentals (AZ-900)
+        content: Issued on Feb 2024
+        image: /images/Azure.png
+
+      - title: Azure Data Engineering Associate (DP-203)
+        content: Issued on Feb 2024
+        image: /images/Azure.png
+
+      - title: Azure AI Fundamentals (AI-900)
+        content: Issued on Feb 2024
+        url: "https://learn.microsoft.com/en-us/users/indrajeetthakare-1308/credentials/adf95981f26ae771?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+        image: /images/Azure.png
+
+        #url: "https://github.com/gurusabarish/hugo-profile"
+#        image: /images/DBX.png
+
+
+  # projects
+#  projects:
+#    enable: true
+    # title: "Custom Name"
+#    items:
+#      - title: Analysis on Table Spread Category Business
+#        content: Involved analyzing current sales trends, identifying unique patterns, identifying key factors affecting sales across various US regions, and proposing innovative solutions for Conagra to enhance future sales.
+#        image: /images/projects/conagra.jpeg
+#        featured:
+#          name: Demo
+#          link: https://hugo-profile.netlify.app
+#        badges:
+#          - "Market Research"
+#          - "Exploratory Data Analysis"
+#          - "Regression"
+#          - "Recommendation"
+#        links:
+#          - icon: fa fa-envelope
+#            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+#          - icon: fab fa-github
+#            url: https://github.com/gurusabarish/hugo-profile
+#          - icon: fab fa-twitter
+#            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+#      - title: BI Solutions for Complaint Management
+#        content: Designed Tableau dashboards on Consumer Complaint Database to identify trends, patterns, and service issues, aiming to inform strategies for improving financial services and addressing consumer concerns.
+#        image: /images/projects/cust.png
+#        featured:
+#          name: Demo
+#          link: https://django-converter.herokuapp.com
+#        badges:
+#          - "Tableau"
+#          - "MS Excel"
+#          - "Data Analysis"
+#          - "Data Visualization"
+#        links:
+#          - icon: fab fa-github
+#            url: https://github.com/gurusabarish/converter
+
+#      - title: 2015 Predicting Flight Delays and Cancellations
+#        content: Our study finds departure delays as the main cause of flight disruptions, peaking in January and March, with weather being the primary cause of cancellations. Effective weather forecasting is essential.
+#        image: /images/projects/flight.jpg
+#        featured:
+#          name: Demo V2
+#          link: https://hugo-profile-2.netlify.app
+#        badges:
+#          - "Data Extraction and Cleaning"
+#          - "Exploratory Data Analysis"
+#          - "Regression"
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: You can email me anytime! Whether you have questions or just want to connect, I'll get back to you as soon as I can.
+    btnName: Mail me
+    btnLink: mailto:ist220000@utdallas.edu
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+#    recentPosts:
+#      path: "blogs"
+#      count: 3
+#      title: Recent Posts
+#      enable: true
+#      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/IndraT97
+      linkedin: https://www.linkedin.com/in/i97/
+      instagram: https://www.linkedin.com/in/i97/
+      
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  # terms:
+  #   read: "Read"
+  #   toc: "Table Of Contents"
+  #   #copyright: "All rights reserved"
+  #   pageNotFound: "Page not found"
+  #   emailText: "Check out this site"
+
+  # datesFormat:
+  #   article: "May 31, 2024"
+  #   articleList: "May 31, 2024"
+  #   articleRecent: "May 31, 2024"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>languageCode: en-us
+# title: Purva Parab
+# theme: hugo-profile
